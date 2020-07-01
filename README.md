@@ -1,4 +1,4 @@
-# WebKudosu
+# Kudosu
 
 Kudosu is basically sudoku backwords...
 
