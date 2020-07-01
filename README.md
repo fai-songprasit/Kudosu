@@ -1,28 +1,18 @@
-# A starter webpack project for React
+# WebKudosu
 
-This is a starter project that uses webpack to transpile and bundle ES6 React code. To use, consider these steps:
+### Kudosu is basically sudoku backwords...
 
-* Fork this repo
-* Rename your repo according to the app you're building
+### This is a web app project that will be built using React, Redux and external API called Sugoku(by berto)
 
-```sh
-git clone https://github.com/[your-account]/[your-app].git
-cd [your-app] && npm i
-```
+## MVP
 
-To start the development server with a watcher that rebuilds your code, run `npm run dev`. The assets built by webpack are placed in `server/public`. This folder is defined as a static folder in an Express.js server that can be started with `npm run server`.
+### Get board information from Sugoku API
+### Create select dificulty so that users can switch between easy, medium, hard and rondom settings
+### Draw board, replacing 0 in array with input space for people to play the game
+### Add solve functionality for users to be able to see the answers if they give up
+### Reset board button
 
-Additional components should be placed in `client/components`.
+## Stretch
 
-## Separate client/server
-
-The boilerplate is also set up to host the client using `webpack-dev-server` with hot module reloading etc. To use this method, in one terminal run:
-```sh
-npm run client
-```
-and in the other:
-```sh
-npm run server
-```
-The client will be available on http://localhost:8080 and the server on http://localhost:3000. Note that you will still need to manage CORS between the two, as they are on different ports.
-
+### have users input name at the beginning of the game
+### save state for later use button (store in database with user's name attached)
