@@ -6,8 +6,8 @@ This is a web app project that will be built using React, Redux and external API
 
 ## MVP
 
-[ ] Get board information from Sugoku API
-[ ] Create select dificulty so that users can switch between easy, medium, hard and rondom settings
+- [ ] Get board information from Sugoku API
+- [ ] Create select dificulty so that users can switch between easy, medium, hard and rondom settings
 [ ] Draw board, replacing 0 in array with input space for people to play the game
 [ ] Add solve functionality for users to be able to see the answers if they give up
 [ ] Reset board button
