@@ -8,6 +8,6 @@ function board (state = [], action) {
       default:
         return state
     }
-  }
+}
 
 export default board
