@@ -10,18 +10,22 @@ export const requestBoard = () => {
 }
 
 export const receiveBoard = (board) => {
+  console.log('receive', board)
   return {
     type: GET_BOARD,
-    board: board.map(board => board.data)
+    board: board.map(board => board.board)
   }
 }
 
 export function fetchBoard (board) {
+  // console.log('fetch1', board)
   return (dispatch) => {
+    // console.log('fetch2', board)
     dispatch(requestBoard())
     return request
       .get(`/api/v1/kudosu/${board}`)
       .then(res => {
+        // console.log(res.body)
         dispatch(receiveBoard(res.body))
       })
       .catch(err => console.log(err))
