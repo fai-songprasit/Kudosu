@@ -15,4 +15,5 @@ This is a web app project that will be built using React, Redux and external API
 ## Stretch
 
 - [ ] Have users input name at the beginning of the game
+- [ ] Log in option for saved games and game records
 - [ ] Save state for later use button (store in database with user's name attached)
