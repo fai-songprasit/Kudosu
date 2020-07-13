@@ -1,6 +1,6 @@
 import {GET_BOARD} from '../actions'
 
-function board (state = [], action) {
+function getBoard (state = [], action) {
     switch (action.type) {
       case GET_BOARD:
         return action.board
@@ -10,4 +10,4 @@ function board (state = [], action) {
     }
 }
 
-export default board
+export default getBoard

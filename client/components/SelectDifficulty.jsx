@@ -20,6 +20,7 @@ class SelectDifficulty extends React.Component {
         this.setState ({
             clicked: true,
         })
+        this.props.dispatch(fetchBoard(this.state.value))
     }
     
     render () {
@@ -28,7 +29,7 @@ class SelectDifficulty extends React.Component {
             <div className="search">
                 <h3>Select your difficulty</h3>
                 <input type='text' onChange={this.handleChange}/>
-                <button onClick={() => dispatch(fetchBoard(this.state.value)), this.handleClick}>
+                <button onClick={this.handleClick}>
                     Generate Board
                 </button>
                 {this.state.clicked && <Board/>}

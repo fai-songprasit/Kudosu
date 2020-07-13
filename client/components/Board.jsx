@@ -2,10 +2,8 @@ import React from 'react'
 import {connect} from 'react-redux'
 
 const Board = (props) => {
-  //data comes through as board:[[....]]
+  console.log(props.board)
   //need to make it map and render each inidividual array inside as a row
-  //possibly require a map inside a map
-  console.log(props)
     return (
       <>
         <p>a sudoku board will show up here!</p>
