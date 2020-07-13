@@ -1,9 +1,9 @@
-import {RECEIVE_BOARD} from '../actions'
+import {GET_BOARD} from '../actions'
 
 function board (state = [], action) {
     switch (action.type) {
-      case RECEIVE_BOARD:
-        return action.posts
+      case GET_BOARD:
+        return action.board
   
       default:
         return state

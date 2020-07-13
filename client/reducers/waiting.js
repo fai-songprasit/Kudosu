@@ -1,21 +1,16 @@
 import {
-    SHOW_ERROR,
     REQUEST_BOARD,
-    RECEIVE_BOARD} from '../actions'
+    GET_BOARD,
+} from '../actions'
   
 const waiting = (state = false, action) => {
     switch (action.type) {
         case REQUEST_BOARD:
-        return true
-
-        case RECEIVE_BOARD:
-        return false
-
-        case SHOW_ERROR:
-        return false
-
+            return true
+        case GET_BOARD:
+            return false
         default:
-        return state
+            return state
     }
 }
   

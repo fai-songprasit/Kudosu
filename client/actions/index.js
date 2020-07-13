@@ -1,8 +1,7 @@
 import request from 'superagent'
 
-export const SHOW_ERROR = 'SHOW_ERROR'
-export const RECEIVE_BOARD = 'RECEIVE_BOARD'
 export const REQUEST_BOARD = 'REQUEST_BOARD'
+export const GET_BOARD = 'GET_BOARD'
 
 export const requestBoard = () => {
   return {
@@ -12,15 +11,8 @@ export const requestBoard = () => {
 
 export const receiveBoard = (board) => {
   return {
-    type: RECEIVE_BOARD,
+    type: GET_BOARD,
     board: board.map(board => board.data)
-  }
-}
-
-export const showError = (errorMessage) => {
-  return {
-    type: SHOW_ERROR,
-    errorMessage: errorMessage
   }
 }
 
@@ -28,12 +20,10 @@ export function fetchBoard (board) {
   return (dispatch) => {
     dispatch(requestBoard())
     return request
-      .get(`/api/v1/sugoku/${board}`)
+      .get(`/api/v1/kudosu/${board}`)
       .then(res => {
         dispatch(receiveBoard(res.body))
       })
-      .catch(err => {
-        dispatch(showError(err.message))
-      })
+      .catch(err => console.log(err))
   }
 }
