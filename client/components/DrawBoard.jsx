@@ -18,7 +18,7 @@ const DrawBoard = (props) => {
                   </span>
                 )
               })}
-            </div>
+            </div> 
           )
         })}
         </>
