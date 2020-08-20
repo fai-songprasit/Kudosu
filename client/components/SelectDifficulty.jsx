@@ -5,7 +5,6 @@ import {fetchBoard} from '../actions'
 
 
 class SelectDifficulty extends React.Component {
-    //generate id from cell and row number and pass as props
     state =  {
         value: 'random',
         clicked: false,
