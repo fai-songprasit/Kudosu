@@ -10,10 +10,10 @@ const DrawBoard = (props) => {
         <>
         {props.data.board.map(row => {
           return (
-            <div>
+            <div className="board">
               {row.map(cell => {
                 return (
-                  <span>
+                  <span className="cell">
                     {cell}
                   </span>
                 )
