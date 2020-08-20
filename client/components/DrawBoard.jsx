@@ -13,7 +13,7 @@ const DrawBoard = (props) => {
         <>
         {gameBoard.map(row => {
           return (
-            <div rowId={gameBoard.indexOf(row).toString()} className="board">
+            <div id={gameBoard.indexOf(row).toString()} className="board">
               {row.map(cell => {
                 return (
                   <span className="cell">
