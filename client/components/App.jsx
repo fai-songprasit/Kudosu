@@ -1,8 +1,12 @@
 import React from 'react'
+import SelectDifficulty from './SelectDifficulty'
 
 const App = () => {
   return (
-    <h1>React development has begun!</h1>
+    <div>
+      <h1>Kudosu</h1>
+      <SelectDifficulty/>
+    </div>
   )
 }
 
