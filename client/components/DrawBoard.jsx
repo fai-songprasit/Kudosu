@@ -1,14 +1,19 @@
 import React from 'react'
 
 const DrawBoard = (props) => {
-    //need a way of indentifying which cell is being selected 
-    //if arr=0 && <input id={cellIndex}>
+
+    //currently cannot find cell id using mapped row because it takes index of value
+    //need to find index of all numbers including 0s
+    //make cells still display of content is empty
     //splice (index, 1, {input}) to put it back in array
+
+    const gameBoard = props.data.board
+
     return (
         <>
-        {props.data.board.map(row => {
+        {gameBoard.map(row => {
           return (
-            <div className="board">
+            <div rowId={gameBoard.indexOf(row).toString()} className="board">
               {row.map(cell => {
                 return (
                   <span className="cell">
